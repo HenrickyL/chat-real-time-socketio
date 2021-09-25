@@ -1,0 +1,169 @@
+:root{
+    --color-primary: #150E56;
+    --color-secundary: #0C6E6B;
+    --color-secundary-light: #56dbd7;
+    --color-base: #1E1E1E;
+    --color-base-light: #252526;
+    /*estados*/
+    --color-completed: #6BE2BE;
+    --color-preparing: #9290FE;
+    --color-pending: #FFB572;
+    --color-alert: #FF7CA3;
+    /**/
+    --color-BG: #F7F8FA;
+    --color-BG-dark: #1F1D2B;
+    --color-BG-dark-light:#393C49;
+    /*font*/
+    --color-dark:#3B5162;
+    --color-gray:#889898;
+    --color-light:#ABBBC2;
+    --color-lighter:#E0E6E9;
+
+    
+}
+
+body{
+    height: 100vh;
+    /* background-color: var(--color-light); */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* drag */
+    -webkit-user-drag: none;
+}
+
+
+.select {
+    -webkit-touch-callout: initial; /* iOS Safari */
+      -webkit-user-select: initial; /* Safari */
+       -khtml-user-select: initial; /* Konqueror HTML */
+         -moz-user-select: initial; /* Old versions of Firefox */
+          -ms-user-select: initial; /* Internet Explorer/Edge */
+              user-select: initial; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+  
+
+.no-select{
+    /* seleção */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.compact{
+    overflow-y: auto;
+    /* max-height: 65vh; */
+    box-sizing:border-box;
+    width: 125.1%;
+    padding: 1rem;
+    padding: 1.5rem;
+  }
+
+
+  /* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25); 
+      border-radius:4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+
+  /* Animações */
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    
+    @-webkit-keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+    
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    } 
+  
+  
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    
+    @-webkit-keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+      }
+
+      .fadeOut {
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+        }
+        @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+        } 
+
